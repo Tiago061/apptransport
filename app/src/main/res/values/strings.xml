@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjetoestagioAiko</string>
+    <string name="c_digo_da_linha">Código da Linha</string>
+    <string name="nome_da_linha">Nome da Linha</string>
+    <string name="co_digo_da_linha">Código da Linha</string>
+    <string name="nome_d_linha">Nome da Linha</string>
+    <string name="c_digo_da_parada">Código da Parada</string>
+    <string name="nome_da_parada">Nome da Parada</string>
+    <string-array name="filter_options">
+    <item>Todos</item>
+    <item>Linhas A</item>
+    <item>Linhas B</item>
+    </string-array>
+</resources>
