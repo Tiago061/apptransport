@@ -10,20 +10,26 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface OlhoVivoApiService {
+    @POST("Login/Autenticar")
+    Call<Void> autenticar(@Query("token") String token);
     @GET("Posicao")
     Call<List<Veiculo>> obterPosicoesVeiculos();
 
-    @GET("Linhas")
+    @GET("Linha/Buscar")
     Call<List<LinhaOnibus>> obterLinhas();
 
-    @GET("pontos-de-parada")
+    @GET("Parada/Buscar")
     Call<PontosDeParadaResponse> obterPontosDeParada();
 
-    @GET("Previsao")
-    Call<List<PrevisaoChegada>> obterPrevisaoChegada(@Query("paradaId") String paradaId);
+    @GET("Previsao/Linha")
+    Call<List<PrevisaoChegada>> obterPrevisaoChegada(@Query("codigoLinha") String LinhaId);
+
+    @GET("Previsao/Parada")
+    Call<List<PrevisaoChegada>> obterPrevisaoChegadaPorParada(@Query("codigoParada") String paradaId);
 
 
 

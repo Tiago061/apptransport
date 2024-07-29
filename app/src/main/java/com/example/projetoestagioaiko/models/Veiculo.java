@@ -3,47 +3,51 @@ package com.example.projetoestagioaiko.models;
 import com.google.gson.annotations.SerializedName;
 
 public class Veiculo {
-    @SerializedName("id")
-    private String id;
+    private String prefixo;
+    private double px; // latitude
+    private double py; // longitude
+    private String a;  // indicador de acessibilidade
+    private String t;  // horário da última atualização
 
-    @SerializedName("latitude")
-    private double latitude;
+    // Getters e setters
 
-    @SerializedName("longitude")
-    private double longitude;
-
-    @SerializedName("linha")
-    private String linha;
-
-    public String getId() {
-        return id;
+    public String getPrefixo() {
+        return prefixo;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setPrefixo(String prefixo) {
+        this.prefixo = prefixo;
     }
 
     public double getLatitude() {
-        return latitude;
+        return px;
     }
 
     public void setLatitude(double latitude) {
-        this.latitude = latitude;
+        this.px = latitude;
     }
 
     public double getLongitude() {
-        return longitude;
+        return py;
     }
 
     public void setLongitude(double longitude) {
-        this.longitude = longitude;
+        this.py = longitude;
     }
 
-    public String getLinha() {
-        return linha;
+    public String getAcessibilidade() {
+        return a;
     }
 
-    public void setLinha(String linha) {
-        this.linha = linha;
+    public void setAcessibilidade(String acessibilidade) {
+        this.a = acessibilidade;
+    }
+
+    public String getHorarioAtualizacao() {
+        return t;
+    }
+
+    public void setHorarioAtualizacao(String horarioAtualizacao) {
+        this.t = horarioAtualizacao;
     }
 }
