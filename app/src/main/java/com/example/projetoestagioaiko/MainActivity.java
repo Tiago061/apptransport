@@ -9,7 +9,9 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         linhaList = new ArrayList<>();
         linhaList.add(new Linha("123", "Linha A"));
         linhaList.add(new Linha("456", "Linha B"));
+        linhaList.add(new Linha("123", "Linha A"));
 
         linhaAdapter = new LinhaAdapter(linhaList);
         recyclerView.setAdapter(linhaAdapter);
@@ -58,6 +61,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         if(mapFragment != null){
             mapFragment.getMapAsync(this);
+        }else {
+            Log.e("MainActivity", "mapFragment is null");
         }
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -99,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.moveCamera(CameraUpdateFactory.newLatLng(saoPaulo));
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private void filter(String query, String filter){
         filteredLinhaList.clear();
         for(Linha linha : linhaList){
