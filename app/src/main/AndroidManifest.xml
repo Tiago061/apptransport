@@ -15,9 +15,11 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="2c20d197fd640543f90274e73502f7c718b0070b9368fbebcaa6d6344df58176"/>
+            android:value="AIzaSyCWtsrRDTUW6v5BpKyqsYT6JYZIjrlsJpM"/>
+
+        <activity android:name=".mainActivity.MapActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".mainActivity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

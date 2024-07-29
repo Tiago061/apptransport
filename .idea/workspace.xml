@@ -5,12 +5,27 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_linhas.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
           <theme>@style/Theme.ProjetoestagioAiko</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_linha.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_previsao_chegada.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_linha_onibus.xml">
         <config>
           <theme>@style/Theme.ProjetoestagioAiko</theme>
         </config>
@@ -20,6 +35,11 @@
           <theme>@style/Theme.ProjetoestagioAiko</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_previsao_chegada.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
@@ -27,6 +47,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6347b3e-a1cb-46b1-9005-c0f83a674810" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/adapters/PrevisaoChegadaAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/api/RetrofitClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/mainActivity/LinhasActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/mainActivity/MapActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/mainActivity/PrevisaoChegadaActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/PontoDeParada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/PontosDeParadaResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/PrevisaoChegada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/Veiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_linhas.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_previsao_chegada.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_previsao_chegada.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/refs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
@@ -38,12 +72,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/mainActivity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/NetworkRetrofit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/OlhoVivoApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/api/OlhoVivoApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/adapters/LinhaAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/adapters/LinhaOnibusAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/adapters/ParadaAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/Linha.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/LinhaOnibus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/Parada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/PosicaoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/projetoestagioaiko/models/PrevisaoResponse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_linha.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_linha_onibus.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +143,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="valueResourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
-        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -134,6 +176,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.projetoestagioaiko" />
       <recent name="com.example.projetoestagioaiko.adapters" />
     </key>
   </component>
